@@ -19,21 +19,11 @@ function App() {
   //   })
   // }
   const callApi = async (requestParams) => {
-    axios.get(`https://pokeapi.co/api/v2/pokemon/ditto`)
+    axios.get(`https://swapi.dev/api/people/1`)
     .then(res => {
-      const poke = res.data;
-      setData({ poke })
+      const SWars = res.data;
+      setData({ SWars })
     })
-    // await setTimeout(() => {
-    //   const data = {
-    //     count: 2,
-    //     results: [
-    //       { name: 'fake thing 1', url: 'http://fakethings.com/1' },
-    //       { name: 'fake thing 2', url: 'http://fakethings.com/2' },
-    //     ],
-    //   };
-    //   setData(data);
-    // }, 1000)
     setRequestParams(requestParams);
   }
 

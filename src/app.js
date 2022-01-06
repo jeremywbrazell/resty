@@ -27,6 +27,7 @@ function App() {
   // const [requestParams, setRequestParams] = useState({});
 
   const callApi = async (requestParams) => {
+
     // setRequestParams(requestParams);
     const action = {
       type: 'UPDATE_REQUESTPARAMS',
